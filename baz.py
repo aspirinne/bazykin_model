@@ -9,6 +9,7 @@ gamma = 1
 
 
 def bazykin(t, y):
+    """define the models equations"""
     return np.array([
         ((1 - y[0]) * y[0]**2)/(n + y[0]) - y[0] * y[1],
         gamma * (y[0] - m) * y[1]])
